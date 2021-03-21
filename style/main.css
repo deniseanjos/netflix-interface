@@ -1,0 +1,116 @@
+/* Boa prática para definir informações padrões, através da raiz do documento e váriavel*/
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* Resetar as informações padrões do site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTRUTURA BASE*/
+
+body {
+    background-color: var(--preta);
+    font-family: Arial,'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+} */
+
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/assets/img/capa-caragentebranca.jpg);
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: Arial, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulo {
+    margin-top: 20%;
+    font-size: 35px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: 10px;
+}
+
+.botao:hover {
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 3%;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+#netflix-logo {
+    width: 10%;
+    height: 35%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
